@@ -1,4 +1,4 @@
-
+/**  -------------------------------------------REDIS ----------------------------------------- **/
 # To run redis in container
 docker run -d --name redis-cache -v redis-data:/data -p 6379:6379 redis
 
