@@ -4,3 +4,10 @@ docker run -d --name redis-cache -v redis-data:/data -p 6379:6379 redis
 
 # To run redis commands inside container
 docker exec -it redis-cache redis-cli
+
+/**  -------------------------------------------MONGO DB ----------------------------------------- **/
+# To run MONGO in container
+docker run -d --name mongo-db -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
+
+# To run mongo commands inside container
+docker exec -it mongo-container mongosh
